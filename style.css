@@ -246,3 +246,54 @@ main { width: 100%; padding: 0; }
   .organizers { font-size: 8px; align-items: flex-start; }
   .description { grid-template-columns: 1fr; background: #e0ffb1; border-top: 1px solid #b8b8b8; }
 }
+/* 데스크톱·정방형: Open 면의 연결부 라운드 */
+@media (min-width: 601px) {
+  /* 위쪽 왼쪽 연결부 */
+  .opening::after {
+    content: "";
+    grid-column: 9 / 10;
+    grid-row: 1;
+    justify-self: end;
+    align-self: start;
+    width: .4em;
+    height: .4em;
+    background: radial-gradient(
+      circle at bottom left,
+      transparent 69%,
+      var(--lime) 71%
+    );
+    pointer-events: none;
+  }
+
+  .open-label {
+    position: relative;
+    justify-self: stretch;
+    align-self: stretch;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  /* 아래쪽 오른쪽 연결부 */
+  .open-label::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -.4em;
+    width: .4em;
+    height: .4em;
+    background: radial-gradient(
+      circle at bottom left,
+      transparent 69%,
+      var(--lime) 71%
+    );
+    pointer-events: none;
+  }
+}
+
+/* 정방형의 8열 그리드에 맞춰 위치 이동 */
+@media (min-width: 601px) and (max-width: 1000px) {
+  .opening::after {
+    grid-column: 5 / 6;
+  }
+}
