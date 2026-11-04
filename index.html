@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타이포잔치 2023 — 따옴표 열고 닫고</title>
+
+    <!-- 웹폰트 불러오기 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&amp;family=Inter:wght@400;500&amp;family=Noto+Sans+KR:wght@400;500;700&amp;display=swap"
+    >
+
+    <!-- 지금은 웹폰트를 적용하는 스타일만 작성 -->
+    <style>
+      body {
+        font-family: "Noto Sans KR", sans-serif;
+      }
+
+      .korean-title {
+        font-family: "Black Han Sans", sans-serif;
+        font-weight: 400;
+      }
+
+      .english-title {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+      }
+    </style>
+
+    <!-- 나중에 style.css 파일을 만들면 아래 주석을 해제 -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <main>
+      <!-- CSS로 세 가지 화면 크기에 맞게 재배치할 포스터 -->
+      <article class="poster">
+
+        <!-- 1. 위쪽: 따옴표 열고 -->
+        <header class="opening">
+          <h1 class="korean-title opening-title" aria-label="따옴표 열고">
+            <span class="open-quote frame-tab tab-left">따옴</span>
+            <span class="open-symbol frame-tab tab-right">표</span>
+            <span class="open-yeol">열</span>
+            <span class="open-go">고</span>
+          </h1>
+
+          <p class="english-title open-label" lang="en" aria-label="Open">
+            O-p-e-n
+          </p>
+
+          <!-- Quo와 tation은 같은 줄에 배치할 한 쌍 -->
+          <p
+            class="english-title opening-quotation"
+            lang="en"
+            aria-label="Quotation"
+          >
+            <span class="open-quo frame-tab tab-left">Quo</span>
+            <span class="open-tation">tation</span>
+          </p>
+
+          <!-- 세로획 오른쪽에 Ma, Ma와 rks는 같은 줄 -->
+          <p
+            class="english-title opening-marks"
+            lang="en"
+            aria-label="Marks"
+          >
+            <span class="vertical-stroke" aria-hidden="true">|</span>
+            <span class="open-ma">Ma</span>
+            <span class="open-rks frame-tab tab-right">rks</span>
+          </p>
+        </header>
+
+        <!-- 2. 중간: 행사명 / 날짜 / 장소 -->
+        <section class="event-info" aria-label="행사 정보">
+          <div class="event-name">
+            <h2>타이포잔치 2023</h2>
+            <p>국제 타이포그래피 비엔날레</p>
+            <p lang="en">
+              Typojanchi 2023<br>
+              International Typography Biennale
+            </p>
+          </div>
+
+          <div class="event-date">
+            <p>
+              <time datetime="2023-09-19">2023년 9월 19일</time>
+              —
+              <time datetime="2023-10-14">10월 14일</time>
+            </p>
+            <p lang="en">September 19 — October 14, 2023</p>
+          </div>
+
+          <div class="event-venue">
+            <p>문화역서울284</p>
+            <p lang="en">Culture Station Seoul 284</p>
+          </div>
+        </section>
+
+        <!-- 3. 아래쪽: 따옴표 닫고 -->
+        <section class="closing" aria-label="따옴표 닫고">
+          <h2 class="korean-title closing-title" aria-label="따옴표 닫고">
+            <span class="close-dda">따</span>
+            <span class="close-om">옴</span>
+            <span class="close-symbol">표</span>
+            <span class="close-word frame-tab tab-right">
+              닫<span class="slash" aria-hidden="true">/</span>고
+            </span>
+          </h2>
+
+          <p class="english-title close-label" lang="en" aria-label="Close">
+            C/l/o/s/e
+          </p>
+
+          <p
+            class="english-title closing-quotation"
+            lang="en"
+            aria-label="Quotation"
+          >
+            <span class="close-quota">Quota</span>
+            <span class="close-tion">tion</span>
+          </p>
+
+          <p
+            class="english-title closing-marks"
+            lang="en"
+            aria-label="Marks"
+          >
+            <span class="close-mar frame-tab tab-left">Mar</span>
+            <span class="close-ks">ks</span>
+          </p>
+        </section>
+
+        <!-- 4. 상세 본문 2문단 -->
+        <!-- 리디자인용 문안 초안이며, 공식 전시 소개문을 인용한 내용은 아님 -->
+        <section class="description" aria-labelledby="description-title">
+          <h2 id="description-title">따옴표 안에서 시작되는 이야기</h2>
+
+          <p>
+            따옴표는 다른 사람의 말을 옮기고, 어떤 문장을 특별히 바라보게 합니다.
+            열고 닫는 작은 기호 사이에서 글자는 새로운 맥락을 만나고,
+            읽는 사람은 서로 다른 목소리를 발견합니다.
+          </p>
+
+          <p>
+            글자의 크기와 간격, 그리고 글자를 둘러싼 여백은 읽는 방식에 영향을 줍니다.
+            익숙한 문장을 낯설게 바라보며, 문자와 공간이 함께 만들어 내는
+            타이포그래피의 다양한 표정을 살펴봅니다.
+          </p>
+        </section>
+
+        <!-- 5. 하단: 주최·주관 -->
+        <footer class="organizers">
+          <p class="organizer-host">
+            <span>주최</span> 문화체육관광부
+          </p>
+          <p class="organizer-partner">
+            <span>주관</span> 한국공예·디자인문화진흥원
+          </p>
+        </footer>
+
+      </article>
+    </main>
+  </body>
+</html>
