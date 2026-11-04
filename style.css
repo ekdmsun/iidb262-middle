@@ -329,3 +329,28 @@ main { width: 100%; padding: 0; }
     );
   }
 }
+/* 데스크톱: 포스터를 브라우저 높이에 맞춤 */
+@media (min-width: 1001px) {
+  .opening,
+  .closing {
+    min-height: 0;
+    grid-template-rows: repeat(5, minmax(0, 1fr));
+    font-size: clamp(28px, min(4.3vw, 5.4vh), 60px);
+  }
+
+  .opening {
+    height: calc((100vh - 150px) * .53);
+  }
+
+  .closing {
+    height: calc((100vh - 150px) * .47);
+  }
+
+  .event-info {
+    height: 100px;
+  }
+
+  .organizers {
+    height: 34px;
+  }
+}
