@@ -56,7 +56,7 @@ main { width: 100%; padding: 0; }
 .open-rks { grid-column: 11 / 13; grid-row: 4; justify-self: end; }
 .open-go { grid-column: 8 / 10; grid-row: 5; justify-self: center; }
 
-/* 6주차: Position과 겹침. 표/Open 뒤의 연결된 라임 면 */
+/* Position과 겹침. */
 .opening::before {
   content: "";
   grid-column: 10 / 13;
