@@ -354,3 +354,19 @@ main { width: 100%; padding: 0; }
     height: 34px;
   }
 }
+/* Marks 전체를 감싸는 면 */
+.open-rks {
+  grid-column: 10 / 13;
+}
+
+@media (max-width: 1000px) {
+  .open-rks {
+    grid-column: 6 / 9;
+  }
+}
+
+@media (max-width: 600px) {
+  .open-rks {
+    grid-column: 2 / 5;
+  }
+}
